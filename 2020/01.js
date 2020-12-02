@@ -210,8 +210,8 @@ const input = [
 
 /**
  * find2Total finds the two numbers that equal the target number and adds them together.
- * @param numbers This is an array of numbers.
- * @param target This is the combined total you are looking for.
+ * @param arr This is an array of numbers.
+ * @param sum This is the combined total you are looking for.
  */
 const find2Total = (arr, sum) => {
     const map = {};
@@ -224,6 +224,11 @@ const find2Total = (arr, sum) => {
     return -1;
 };
 
+/**
+ * find3Total finds the two numbers that equal the target number and adds them together.
+ * @param arr This is an array of numbers.
+ * @param sum This is the combined total you are looking for.
+ */
 const find3Total = (arr, sum) => {
     for(let i = 0; i < arr.length; i++){
         const indices = find2Total(arr, sum-arr[i]);
